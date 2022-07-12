@@ -8,11 +8,11 @@ APPROACH:
 
 We follow a step-by-step process in achieving the solution for the above-mentioned problem:
 
-Load the data from client's machine and create a table on MySQL.
-Load the data into Hive Table.
-Implement SCD-1 to keep the up-to-date data.
-Load the data back into MySQL.
-Create a backup table for reconciliation.
+1. Load the data from client's machine and create a table on MySQL.
+2. Load the data into Hive Table.
+3. Implement SCD-1 to keep the up-to-date data.
+4. Load the data back into MySQL.
+5. Create a backup table for reconciliation.
 
 
 NOTE: Two shells are created to achieve this:
