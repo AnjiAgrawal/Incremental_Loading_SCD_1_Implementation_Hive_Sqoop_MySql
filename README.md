@@ -16,7 +16,7 @@ Create a backup table for reconciliation.
 
 
 NOTE: Two shells are created to achieve this:
-ot.sh : One Time script to setup the structure required for the data to be loaded and processed
+ots.sh : One Time script to setup the structure required for the data to be loaded and processed
 daily.sh : Daily script to process the daily data coming in batches such that only latest info is maintained in the end table for analysis
 
 
