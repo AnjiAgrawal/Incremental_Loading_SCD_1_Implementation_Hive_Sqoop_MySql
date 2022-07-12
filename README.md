@@ -8,17 +8,18 @@ APPROACH:
 
 We follow a step-by-step process in achieving the solution for the above-mentioned problem:
 
-1. Load the data from client's machine and create a table on MySQL.
-2. Load the data into Hive Table.
-3. Implement SCD-1 to keep the up-to-date data.
-4. Load the data back into MySQL.
-5. Create a backup table for reconciliation.
+1. Load the data from client's machine and create a table on MySQL
+2. Load the data into Hive Table
+3. Implement SCD-1 to keep the up-to-date data
+4. Load the data back into MySQL
+5. Create a backup table for reconciliation
 
 
 NOTE: Two shells are created to achieve this:
 
-a. ots.sh : One Time script to setup the structure required for the data to be loaded and processed
-b. daily.sh : Daily script to process the daily data coming in batches such that only latest info is maintained in the end table for analysis
+1. ots.sh : One Time script to setup the structure required for the data to be loaded and processed
+
+2. daily.sh : Daily script to process the daily data coming in batches such that only latest info is maintained in the end table for analysis
 
 
 ![image](https://user-images.githubusercontent.com/107996786/178391621-ce3e9437-282a-466f-b3d1-29aa2e22aff5.png)
